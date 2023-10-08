@@ -18,7 +18,7 @@ template_ids = os.environ["TEMPLATE_ID"].split(',')
 city = os.environ["CITY"].split(',')
 
 # 获取天气和温度
-def get_weather(city):
+def get_weather():
     url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
     res = requests.get(url).json()
     weather = res['data']['list'][0]
