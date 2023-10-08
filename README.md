@@ -1,0 +1,2 @@
+# SendMsgToVx
+利用GitHub事件流和微信公众平台测试号推送消息
