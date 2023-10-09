@@ -62,8 +62,8 @@ for i in range(len(user_ids)):
     data = {
         "date": {"value": "{}".format(dat), "color": get_random_color()},
         "city": {"value": "{}".format(cit), "color": get_random_color()},
-        "weather": {"value": {}".format(wea), "color": get_random_color()},
-        "temperature": {"value": {}".format(tem), "color": get_random_color()},
+        "weather": {"value": "{}".format(wea), "color": get_random_color()},
+        "temperature": {"value": "{}".format(tem), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}
     }
     print(data)
