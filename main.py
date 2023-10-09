@@ -60,10 +60,10 @@ for i in range(len(user_ids)):
     tem = get_tem()
     cit, dat = get_city_date("天津")
     data = {
-        "date": {"value": "今日日期：{}".format(dat), "color": get_random_color()},
-        "city": {"value": "当前城市：{}".format(cit), "color": get_random_color()},
-        "weather": {"value": "今日天气：{}".format(wea), "color": get_random_color()},
-        "temperature": {"value": "当前温度：{}".format(tem), "color": get_random_color()},
+        "date": {"value": "{}".format(dat), "color": get_random_color()},
+        "city": {"value": "{}".format(cit), "color": get_random_color()},
+        "weather": {"value": {}".format(wea), "color": get_random_color()},
+        "temperature": {"value": {}".format(tem), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}
     }
     print(data)
