@@ -10,12 +10,16 @@ from wechatpy.client.api import WeChatMessage, WeChatTemplate
 today = datetime.now()
 
 # 微信公众测试号ID和SECRET
-app_id = "wx66f369b9638bd494"
-app_secret = "dc346cfa8031a5ef62e32cda7261b422"
+app_id = os.environ["APP_ID"]
+app_secret = os.environ["APP_SECRET"]
+# app_id = "wx66f369b9638bd494"
+# app_secret = "dc346cfa8031a5ef62e32cda7261b422"
 
 # 可把os.environ结果替换成字符串在本地调试
-user_ids = ["o7w3O6USLeyB3Qsi5O3PXpKeN8sQ"]
-template_ids = ["Y6ROHAGcxktlDFLyLcZrSK-O9IRP0gnZpF77qxCtDXs"]
+user_ids = os.environ["USER_ID"].split(',')
+template_ids = os.environ["TEMPLATE_ID"].split(',')
+# user_ids = ["o7w3O6USLeyB3Qsi5O3PXpKeN8sQ"]
+# template_ids = ["Y6ROHAGcxktlDFLyLcZrSK-O9IRP0gnZpF77qxCtDXs"]
 
 # 获取天气和温度
 def get_weather():
